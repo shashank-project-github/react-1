@@ -1,19 +1,23 @@
+import Link from 'next/link';
 import React from 'react'
-// import Header from "/Component/Header"
-// import Login from "/Component/Login"
-// import Navbar from '@/Components/Navbar'    
 
-const page = () => {
+const Home = () => {
   return (
     <div>
-      {/* <Navbar/> */}
-      {/* <Header/> */}
-      <h3>Main Page</h3>
-      {/* <Login/> */}
-      {/* <link rel="import" href="eventhandling/page.jsx" /> */}
-      {/* <EventHandling/> */}
+    <Link href="/login">Login</Link>
+    <Link href="/contact">Login</Link>
+    <Link href="/signup">Login</Link>
+    <Link href="/contact">Login</Link>
+    <Link href="/eventHandling">EventHandling</Link>
+    <Link href="/todolist">To Do List</Link>
+
+    
+      <h1 style={{ color:'red', fontSize: '2em'}}>Home Page</h1>
+      <p>Welcome to Next.js!</p>
+
+      <button type="button" className='myBtn'>Nice</button>
     </div>
   )
 }
 
-export default page
+export default Home;
